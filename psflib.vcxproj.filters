@@ -11,18 +11,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="psf2fs.c">
+    <ClCompile Include="src\psf2fs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="psflib.c">
+    <ClCompile Include="src\psflib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="psf2fs.h">
+    <ClInclude Include="include\psflib\psf2fs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="psflib.h">
+    <ClInclude Include="include\psflib\psflib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
