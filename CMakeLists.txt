@@ -17,9 +17,6 @@ set(ZLIB_BUILD_TESTING OFF CACHE BOOL "" FORCE)
 if(PSFLIB_EXTERNAL_ZLIB)
     find_package(ZLIB REQUIRED)
 else()
-    set(ZLIB_BUILD_SHARED OFF CACHE BOOL "" FORCE)
-    set(ZLIB_BUILD_STATIC ON CACHE BOOL "" FORCE)
-
     include(FetchContent)
 
     FetchContent_Declare(
@@ -28,8 +25,6 @@ else()
         GIT_TAG        v1.3.2
     )
     FetchContent_MakeAvailable(zlib)
-
-    add_library(ZLIB::ZLIB ALIAS zlibstatic)
 endif()
 
 if(PSFLIB_SHARED_OBJECT)
